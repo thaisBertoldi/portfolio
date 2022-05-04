@@ -2,9 +2,9 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Skills from "../../components/skills/Skills";
 import { UserContext } from "../../context/UserContext";
+import { Btn } from "../../globalStyles.style";
 import {
   Bio,
-  Btn,
   BtnDiv,
   FirstContainer,
   ImgCustom,

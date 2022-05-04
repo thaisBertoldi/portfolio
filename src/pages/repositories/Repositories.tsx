@@ -1,16 +1,25 @@
 import { useState } from 'react'
 import ModalRepositories from '../../components/modalRepositories/ModalRepositories';
+import Projects from '../../components/projects/Projects';
+import { Btn } from '../../globalStyles.style';
+import { ContainerRepos, DivButton } from './Repositories.style';
 
 function Repositories() {
   const [isAllRepos, setIsAllRepos] = useState(false);
 
   return (
-    <div>
-      <button onClick={() => setIsAllRepos(true)}>Clique aqui para ver todos os repositórios</button>
+    <ContainerRepos>
+      <DivButton>
+        <Btn width={'500px'} onClick={() => setIsAllRepos(true)}>Clique aqui para ver todos os repositórios</Btn>
+      </DivButton>
+
+      <h1>Principais projetos:</h1>
+      <Projects />
+
       {isAllRepos && (
         <ModalRepositories onClick={() => setIsAllRepos(false)} />
       )}
-    </div>
+    </ContainerRepos>
   )
 }
 

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const ContainerSkills = styled.div`
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 `;
 
 export const Card = styled.div`
@@ -24,12 +24,12 @@ export const Card = styled.div`
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    -webkit-box-shadow: 0px 1px 31px 9px rgba(0, 0, 0, 0.46);
-  box-shadow: 0px 1px 31px 9px rgba(105, 105, 105, 0.46);
+    -webkit-box-shadow: 0px 1px 31px 9px #351D66;
+    box-shadow: 0px 1px 31px 9px #351D66;
   }
 `;
 
 export const Img = styled.img`
-    width: 60%;
-    height: 50%;
+  width: 60%;
+  height: 50%;
 `;
