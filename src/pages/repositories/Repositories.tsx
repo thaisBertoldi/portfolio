@@ -12,8 +12,6 @@ function Repositories() {
       <DivButton>
         <Btn width={'500px'} onClick={() => setIsAllRepos(true)}>Clique aqui para ver todos os repositórios</Btn>
       </DivButton>
-
-      <h1>Principais projetos:</h1>
       <Projects />
 
       {isAllRepos && (
