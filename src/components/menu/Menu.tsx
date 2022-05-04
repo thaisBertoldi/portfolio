@@ -1,21 +1,21 @@
-import { Link } from "react-router-dom";
+import { ContainerMenu, Item, LinkCustom, List } from "./Menu.style";
 
 export default function Menu() {
   return (
-    <div>
+    <ContainerMenu>
       <nav>
-        <ul>
-          <li>
-            <Link to="/">Sobre mim</Link>
-          </li>
-          <li>
-            <Link to="/repositories">Repositórios</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contato</Link>
-          </li>
-        </ul>
+        <List>
+          <Item>
+            <LinkCustom to="/">Sobre mim</LinkCustom>
+          </Item>
+          <Item>
+            <LinkCustom to="/repositories">Repositórios</LinkCustom>
+          </Item>
+          <Item>
+            <LinkCustom to="/contact">Contato</LinkCustom>
+          </Item>
+        </List>
       </nav>
-    </div>
+    </ContainerMenu>
   );
 }

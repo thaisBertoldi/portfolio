@@ -1,9 +1,12 @@
 import React from 'react'
 import Menu from '../menu/Menu'
+import { ContainerHeader } from './Header.style'
 
 function Header() {
   return (
-    <Menu />
+    <ContainerHeader>
+      <Menu />
+    </ContainerHeader>
   )
 }
 

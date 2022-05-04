@@ -1,9 +1,13 @@
-import React from 'react'
+import { Copyright, FooterContainer } from "./Footer.style";
 
-function Footer() {
+export default function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <FooterContainer>
+      <Copyright>
+        <small>
+          ©{new Date().getFullYear()} Copyright
+        </small>
+      </Copyright>
+    </FooterContainer>
+  );
 }
-
-export default Footer
