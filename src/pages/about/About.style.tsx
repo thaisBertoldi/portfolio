@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import img from "../../images/purple-bg.jpg";
-import { Theme } from "../../theme";
+import imgInvert from "../../images/purple-bg-invert.jpg";
 
 export const FirstContainer = styled.div`
   display: grid;
@@ -13,7 +13,7 @@ export const FirstContainer = styled.div`
 `;
 
 export const SecContainer = styled.div`
-  background: ${Theme.color.purpleLight};
+  background: url(${imgInvert});
 `;
 
 export const ImgCustom = styled.img`
