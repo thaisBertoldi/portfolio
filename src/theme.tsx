@@ -3,7 +3,7 @@ export const Theme = {
         purpleDark: "#4A3062",
         purpleLight: "#C7C7C7",
         purpleNormal: "#63306A",
-        blueDark: "#247892",
+        blueDark: "#00779b",
         blueLight: "#93C4DC"
       },
       padding: "15px",

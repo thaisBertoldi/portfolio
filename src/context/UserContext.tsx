@@ -1,4 +1,4 @@
-import { createContext, ReactNode, FC, useState, useEffect } from "react";
+import { createContext, useState, useEffect } from "react";
 import { ContextDTO, ReposDTO } from "../models/AllDTOs";
 import api from "../service/api";
 
@@ -7,6 +7,7 @@ export const UserContext = createContext({});
 const UserProvider = ( { children }: ContextDTO ) => {
     const [dataUser, setDataUSer] = useState([])
     const [dataRepos, setDataRepos] = useState<Array<ReposDTO>>([])
+    const [loading, setLoading] = useState(true)
 
     const getDataUser = async () => {
         try {
@@ -14,6 +15,8 @@ const UserProvider = ( { children }: ContextDTO ) => {
             setDataUSer(data)
         } catch (error) {
             console.log(error)
+        } finally {
+            setLoading(false)
         }
     }
 
@@ -24,6 +27,8 @@ const UserProvider = ( { children }: ContextDTO ) => {
         console.log(data)
         } catch (error) {
             console.log(error)
+        } finally {
+            setLoading(false)
         }
     }
 
@@ -33,7 +38,7 @@ const UserProvider = ( { children }: ContextDTO ) => {
     },[])
 
     return (
-        <UserContext.Provider value={{dataUser, dataRepos}}>
+        <UserContext.Provider value={{ dataUser, dataRepos, loading }}>
             {children}
         </UserContext.Provider>
     )

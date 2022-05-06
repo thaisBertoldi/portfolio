@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import img from "../../images/purple-bg.jpg";
-import imgInvert from "../../images/purple-bg-invert.jpg";
+import { Theme } from "../../theme";
 
 export const FirstContainer = styled.div`
   display: grid;
@@ -13,11 +13,21 @@ export const FirstContainer = styled.div`
 `;
 
 export const SecContainer = styled.div`
-  background: url(${imgInvert});
+  background: ${Theme.color.purpleLight};
+  display: flex;
+  padding: 0 25%;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 `;
 
-export const ImgCustom = styled.img`
-  border-radius: 50%;
+export const TercContainer = styled.div`
+  background: ${Theme.color.purpleLight};
+`;
+
+export const ImgCustom = styled.img<{radius: string, width: string}>`
+  border-radius: ${props => props.radius};
+  width: ${props => props.width};
 `;
 
 export const TitlePrincipal = styled.h1`
@@ -34,3 +44,15 @@ export const BtnDiv = styled.div`
   display: flex;
   gap: 15px;
 `;
+
+export const DivTitles = styled.div`
+  display: flex;
+  background-color: ${Theme.color.purpleDark};
+  color: white;
+  padding: 0 50px;
+`;
+
+export const TitleSection = styled.h2`
+  color: white;
+`;
+

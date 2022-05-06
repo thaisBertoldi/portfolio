@@ -13,7 +13,6 @@ function Repositories() {
         <Btn width={'500px'} onClick={() => setIsAllRepos(true)}>Clique aqui para ver todos os repositórios</Btn>
       </DivButton>
       <Projects />
-
       {isAllRepos && (
         <ModalRepositories onClick={() => setIsAllRepos(false)} />
       )}

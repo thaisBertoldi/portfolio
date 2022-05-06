@@ -1,7 +1,10 @@
+import moment from "moment";
 import { useContext } from "react";
+import { FaWindowClose } from "react-icons/fa";
 import { UserContext } from "../../context/UserContext";
+import { ACustom, Paragraph } from "../../globalStyles.style";
 import { ModalRepositoriesDTO } from "../../models/AllDTOs";
-import { ContainerModal, Modal } from "./ModalRepositores.style";
+import { CardRepo, ContainerModal, DivClose, Modal, PDataGit } from "./ModalRepositores.style";
 
 const ModalRepositories = ({ onClick }: ModalRepositoriesDTO) => {
   const { dataRepos } = useContext<any>(UserContext);
@@ -9,12 +12,25 @@ const ModalRepositories = ({ onClick }: ModalRepositoriesDTO) => {
   return (
     <ContainerModal>
       <Modal>
+        <DivClose>
+          <FaWindowClose onClick={onClick}>Fechar</FaWindowClose>
+        </DivClose>
+        <CardRepo>
+          <Paragraph>Nome</Paragraph>
+          <Paragraph>URL</Paragraph>
+          <Paragraph>Linguagem</Paragraph>
+          <Paragraph>Data</Paragraph>
+        </CardRepo>
         {dataRepos.map((el: any) => {
             return (
-                <p>{el.name}</p>
+              <CardRepo>
+                <PDataGit>{el.name}</PDataGit>
+                <ACustom href={el.html_url}>{el.html_url}</ACustom>
+                <PDataGit>{el.language}</PDataGit>
+                <PDataGit>{moment(el.updated_at, 'YYYY-MM-DD,h:mm:ss').format('DD-MM-YYYY')}</PDataGit>
+              </CardRepo>
             )
         })}
-        <button onClick={onClick}>Fechar</button>
       </Modal>
     </ContainerModal>
   );

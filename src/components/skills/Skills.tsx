@@ -13,27 +13,27 @@ function Skills() {
     <ContainerSkills>
       <Card>
         <Img src={html} alt="logo html" />
-        <TitleGradient>HTML</TitleGradient>
+        <TitleGradient size={'20px'}>HTML</TitleGradient>
       </Card>
       <Card>
         <Img src={css} alt="logo css" />
-        <TitleGradient>CSS</TitleGradient>
+        <TitleGradient size={'20px'}>CSS</TitleGradient>
       </Card>
       <Card>
         <Img src={js} alt="logo js" />
-        <TitleGradient>Javascript</TitleGradient>
+        <TitleGradient size={'20px'}>Javascript</TitleGradient>
       </Card>
       <Card>
         <Img src={ts} alt="logo ts" />
-        <TitleGradient>Typescript</TitleGradient>
+        <TitleGradient size={'20px'}>Typescript</TitleGradient>
       </Card>
       <Card>
         <Img src={react} alt="logo react" />
-        <TitleGradient>React</TitleGradient>
+        <TitleGradient size={'20px'}>React</TitleGradient>
       </Card>
       <Card>
         <Img src={redux} alt="logo redux" />
-        <TitleGradient>Redux</TitleGradient>
+        <TitleGradient size={'20px'}>Redux</TitleGradient>
       </Card>
     </ContainerSkills>
   );

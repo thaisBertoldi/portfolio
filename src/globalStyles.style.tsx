@@ -25,7 +25,7 @@ export const Btn = styled.button<{ width: string }>`
   }
 `;
 
-export const TitleGradient = styled.h2`
+export const TitleGradient = styled.h2<{size: string}>`
   background-image: linear-gradient(
     to bottom,
     #2F4DC7,
@@ -33,7 +33,20 @@ export const TitleGradient = styled.h2`
     #9219BE
   );
   color: black;
+  font-size: ${props => props.size};
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+`;
+
+export const Paragraph = styled.p`
+    color: ${Theme.color.purpleDark};
+    font-size: 18px;
+`;
+
+export const ACustom = styled.a`
+  text-decoration: none;
+  :hover {
+    text-decoration: underline;
+  }
 `;

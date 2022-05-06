@@ -1,31 +1,48 @@
-import FormContact from "../../components/formContact/FormContact";
 import { ContainerContact, DivLinks, Links } from "./Contact.style";
-import { FaFacebookSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithubSquare,
+  FaFacebookSquare,
+  FaInstagramSquare,
+} from "react-icons/fa";
+import { Paragraph, TitleGradient } from "../../globalStyles.style";
 
 function Contact() {
   return (
     <ContainerContact>
       <div>
-        <h1>Contate-me</h1>
-        <p>
+        <TitleGradient size={"30px"}>Contate-me</TitleGradient>
+        <Paragraph>
           Estou ansiosa para receber uma mensagem sua! Pode ser elogios,
-          críticas, perguntas, propostas, tudo é bem-vindo! Ou você também pode
-          me encontrar nas redes sociais
-        </p>
+          críticas, perguntas, propostas, tudo é bem-vindo!Encontre-me nas redes
+          sociais:
+        </Paragraph>
         <DivLinks>
-          <Links href="https://www.facebook.com/thais.bertoldi" color={'#395498'}>
+          <Links
+            href="https://www.facebook.com/thais.bertoldi"
+            color={"#395498"}
+          >
             <FaFacebookSquare />
           </Links>
-          <Links href="https://www.instagram.com/thaais__b" color={'#BA318B'}>
+          <Links href="https://www.instagram.com/thaais__b" color={"#BA318B"}>
             <FaInstagramSquare />
           </Links>
-          <Links href="https://www.linkedin.com/in/thaisbertoldi" color={'#0073B1'}>
+          <Links
+            href="https://www.linkedin.com/in/thaisbertoldi"
+            color={"#0073B1"}
+          >
             <FaLinkedin />
           </Links>
         </DivLinks>
-      </div>
-      <div>
-        <FormContact />
+        <Paragraph>
+          Você também pode acessar meu GitHub, lá tem todos os meus projetos e
+          minha evolução nas tecnologias frontend:
+        </Paragraph>
+        <DivLinks>
+          <Links href="https://github.com/thaisBertoldi" color={"#24292F"}>
+            <FaGithubSquare />
+          </Links>
+        </DivLinks>
       </div>
     </ContainerContact>
   );

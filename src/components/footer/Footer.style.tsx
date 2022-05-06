@@ -4,7 +4,7 @@ import img from '../../images/purple-bg.jpg'
 export const FooterContainer = styled.div`
   background: url(${img});
   padding: 30px;
-  height: 40px;
+  height: 70px;
 `;
 
 export const Copyright = styled.div`

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import img from "../../images/purple-bg.jpg";
+import { Theme } from "../../theme";
 
 export const ContainerProjects = styled.div`
   display: grid;
@@ -23,6 +24,9 @@ export const Card = styled.div`
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  a {
+    margin-top: 10px;
+  }
   :hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -35,6 +39,24 @@ export const Card = styled.div`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    p {
+      color: #f4dafd;
+    }
+    a {
+      color: #f4dafd;
+    }
   }
 `;
 
+export const DivTech = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+`;
+
+export const DivIcons = styled.div`
+  display: flex;
+  font-size: 50px;
+  gap: 15px;
+  color: ${Theme.color.purpleDark};
+`;
