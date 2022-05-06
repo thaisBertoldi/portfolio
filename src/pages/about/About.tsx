@@ -71,18 +71,20 @@ function About() {
           />
         </div>
         <div>
-          <Paragraph>
-            Meu nome é Thais Bertoldi, tenho 27 anos e moro no interior de Santa
-            Catarina. Tenho adquirido conhecimento em várias skills para me
-            profissionalizar na área de desenvolvimento front-end. Fiz o
-            programa Vem Ser DBC, da empresa DBC Company, e tive a oportunidade
-            de realizar diversos projetos. Sou especializada na Lei Geral de
-            Proteção de Dados pela Assespro-RS.
+          <Paragraph color={"white"}>
+            Meu nome é Thais Bertoldi, tenho 27 anos, moro no interior de Santa
+            Catarina e sou apaixonada por tecnologia. Tenho adquirido
+            conhecimento em várias tecnologias para me profissionalizar na área
+            de desenvolvimento front-end, como, por exemplo, Javascript,
+            Typescript, React e Redux. Fiz o programa Vem Ser DBC, da empresa
+            DBC Company, e tive a oportunidade de realizar diversos projetos.
+            Sou especializada na Lei Geral de Proteção de Dados pela
+            Assespro-RS.
           </Paragraph>
         </div>
       </SecContainer>
       <DivTitles>
-        <TitleSection>Skills</TitleSection>
+        <TitleSection>Tecnologias</TitleSection>
       </DivTitles>
       <TercContainer>
         <Skills />

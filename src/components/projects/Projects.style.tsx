@@ -19,8 +19,8 @@ export const Card = styled.div`
   background-color: #fff;
   border-radius: 15px;
   padding-bottom: 20px;
-  -webkit-box-shadow: 0px 1px 31px 2px #351d66;
-  box-shadow: 0px 1px 31px 2px #351d66;
+  -webkit-box-shadow: 0px 1px 20px 1px #201D64;
+  box-shadow: 0px 1px 20px 1px #201D64;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;

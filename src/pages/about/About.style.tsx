@@ -6,23 +6,23 @@ export const FirstContainer = styled.div`
   display: grid;
   grid-template-columns: 30% auto;
   justify-content: center;
-  height: 700px;
-  background: url(${img});
+  height: 600px;
+  background: url(${img}) top;
   background-size: 100%;
   align-items: center;
 `;
 
 export const SecContainer = styled.div`
-  background: ${Theme.color.purpleLight};
+  background: #919bf3;
   display: flex;
-  padding: 0 25%;
+  padding: 2% 25%;
   gap: 10px;
   align-items: center;
   justify-content: center;
 `;
 
 export const TercContainer = styled.div`
-  background: ${Theme.color.purpleLight};
+  background: #919bf3;
 `;
 
 export const ImgCustom = styled.img<{radius: string, width: string}>`
@@ -47,7 +47,7 @@ export const BtnDiv = styled.div`
 
 export const DivTitles = styled.div`
   display: flex;
-  background-color: ${Theme.color.purpleDark};
+  background: url(${img}) left;
   color: white;
   padding: 0 50px;
 `;

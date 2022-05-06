@@ -40,7 +40,7 @@ export const TitleGradient = styled.h2<{size: string}>`
 `;
 
 export const Paragraph = styled.p`
-    color: ${Theme.color.purpleDark};
+    color: ${props => props.color};
     font-size: 18px;
 `;
 
@@ -49,4 +49,13 @@ export const ACustom = styled.a`
   :hover {
     text-decoration: underline;
   }
+`;
+
+export const DivArrowBack = styled.div`
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
 `;
