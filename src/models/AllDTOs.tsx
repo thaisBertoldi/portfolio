@@ -6,10 +6,17 @@ export interface ReposDTO {
   }[],
 }
 
-export type ContextDTO = {
+export interface ContextDTO {
     children: React.ReactNode;
 }
 
 export interface ModalRepositoriesDTO {
     onClick: Function | any;
+}
+
+export interface DataReposDTO {
+  name: string,
+  html_url: string, 
+  language: string,
+  updated_at: string
 }

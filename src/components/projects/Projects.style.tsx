@@ -33,16 +33,13 @@ export const Card = styled.div`
     transform: scale(1.1);
     background: url(${img});
     h2 {
-      background-image: linear-gradient(to bottom, #ffffff, #b693fc, #f4dafd);
+      background-image: linear-gradient(to bottom, #ffffff, #e4d9fa, #f4dafd);
       color: white;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    p {
-      color: #f4dafd;
-    }
-    a {
+    p, a, svg {
       color: #f4dafd;
     }
   }

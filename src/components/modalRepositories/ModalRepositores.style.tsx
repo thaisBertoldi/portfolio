@@ -39,13 +39,14 @@ export const CardRepo = styled.div`
   display: grid;
   grid-template-columns: 25% 40% 15% 20%;
   border-bottom: 1px solid #eee;
-  gap: 10px;
+  padding-left: 15px;
+  gap: 15px;
   align-items: center;
   :nth-child(odd) {
-    background-color:#D8D8D8;
+    background-color: #a7c3d1;
   }
   :nth-child(even) {
-    background-color:#E8E8E8;
+    background-color: #c6e5f5;
   }
   @media (max-width: 768px) {
     grid-template-columns: auto;
@@ -53,5 +54,5 @@ export const CardRepo = styled.div`
 `;
 
 export const PDataGit = styled.p`
-  color: ${Theme.color.blueDark};
+  color: #013477;
 `;

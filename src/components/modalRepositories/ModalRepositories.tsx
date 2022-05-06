@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { FaWindowClose } from "react-icons/fa";
 import { UserContext } from "../../context/UserContext";
 import { ACustom, Paragraph } from "../../globalStyles.style";
-import { ModalRepositoriesDTO } from "../../models/AllDTOs";
+import { DataReposDTO, ModalRepositoriesDTO } from "../../models/AllDTOs";
 import { CardRepo, ContainerModal, DivClose, Modal, PDataGit } from "./ModalRepositores.style";
 
 const ModalRepositories = ({ onClick }: ModalRepositoriesDTO) => {
@@ -21,7 +21,7 @@ const ModalRepositories = ({ onClick }: ModalRepositoriesDTO) => {
           <Paragraph>Linguagem</Paragraph>
           <Paragraph>Data</Paragraph>
         </CardRepo>
-        {dataRepos.map((el: any) => {
+        {dataRepos.map((el: DataReposDTO) => {
             return (
               <CardRepo>
                 <PDataGit>{el.name}</PDataGit>
