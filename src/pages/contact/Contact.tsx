@@ -20,7 +20,7 @@ function Contact() {
       <ContainerContact>
         <div>
           <TitleGradient size={"30px"}>Contate-me</TitleGradient>
-          <Paragraph>
+          <Paragraph color={'white'}>
             Estou ansiosa para receber uma mensagem sua! Pode ser elogios,
             críticas, perguntas, propostas, tudo é bem-vindo!Encontre-me nas
             redes sociais:
@@ -42,7 +42,7 @@ function Contact() {
               <FaLinkedin />
             </Links>
           </DivLinks>
-          <Paragraph>
+          <Paragraph color={'white'}>
             Você também pode acessar meu GitHub, lá tem todos os meus projetos e
             minha evolução nas tecnologias frontend:
           </Paragraph>

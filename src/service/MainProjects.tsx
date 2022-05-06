@@ -10,8 +10,9 @@ import linkedin from "../images/projects/linkedin.gif";
 import pagina1linkedin from "../images/projects/pagina1linkedin.png";
 import landingpage from "../images/projects/landingpage.gif";
 import pagina1landing from "../images/projects/pagina1landing.png";
+import { MainProjectsDTO } from "../models/AllDTOs";
 
-export const MainProjects = [
+export const MainProjects: MainProjectsDTO['project'] = [
     {
       nome: "Sistema de Compras",
       imgFixa: pagina1pf,

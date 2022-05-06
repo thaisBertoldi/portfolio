@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Theme } from "./theme";
+import img from "./images/purple-bg.jpg";
 
 export const Btn = styled.button<{ width: string }>`
   width: ${(props) => props.width};

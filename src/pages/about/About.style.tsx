@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import img from "../../images/purple-bg.jpg";
-import { Theme } from "../../theme";
+import background from "../../images/background.jpg"
 
 export const FirstContainer = styled.div`
   display: grid;
   grid-template-columns: 30% auto;
   justify-content: center;
   height: 600px;
-  background: url(${img}) top;
+  background: url(${background});
   background-size: 100%;
   align-items: center;
 `;
@@ -47,7 +47,7 @@ export const BtnDiv = styled.div`
 
 export const DivTitles = styled.div`
   display: flex;
-  background: url(${img}) left;
+  background: url(${img});
   color: white;
   padding: 0 50px;
 `;
