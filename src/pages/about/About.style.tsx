@@ -1,14 +1,11 @@
 import styled from "styled-components";
 import img from "../../images/purple-bg.jpg";
-import background from "../../images/background.jpg"
 
 export const FirstContainer = styled.div`
   display: grid;
   grid-template-columns: 30% auto;
   justify-content: center;
   height: 600px;
-  background: url(${background});
-  background-size: 100%;
   align-items: center;
 `;
 

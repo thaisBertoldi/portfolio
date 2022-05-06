@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from "../../images/purple-bg.jpg";
+import img from "../../images/background.jpg";
 import { Theme } from "../../theme";
 
 export const ContainerProjects = styled.div`
@@ -32,6 +32,7 @@ export const Card = styled.div`
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     background: url(${img});
+    background-size: cover;
     h2 {
       background-image: linear-gradient(to bottom, #ffffff, #e4d9fa, #f4dafd);
       color: white;
@@ -56,4 +57,15 @@ export const DivIcons = styled.div`
   font-size: 50px;
   gap: 15px;
   color: ${Theme.color.purpleDark};
+`;
+
+export const DivBackgroundProject = styled.div<{background: string, backgroundHover: string}>`
+  background: url(${props => props.background});
+  height: 200px;
+  background-size: cover;
+  :hover {
+    background: url(${props => props.backgroundHover});
+    height: 200px;
+    background-size: cover;
+  }
 `;

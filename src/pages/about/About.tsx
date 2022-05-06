@@ -16,6 +16,7 @@ import {
   TitleSection,
 } from "./About.style";
 import meImg from "../../images/me.jpg";
+import { Theme } from "../../theme";
 
 function About() {
   const { dataUser, loading } = useContext<any>(UserContext);
@@ -34,14 +35,14 @@ function About() {
             <BtnDiv>
               <Btn
                 width={"200px"}
-                color={"white"}
+                color={Theme.color.blueLight}
                 onClick={() => navigate("/repositories")}
               >
                 Projetos
               </Btn>
               <Btn
                 width={"200px"}
-                color={"white"}
+                color={Theme.color.blueLight}
                 onClick={() => navigate("/contact")}
               >
                 Contato

@@ -9,7 +9,7 @@ export const Btn = styled.button<{ width: string }>`
   border-radius: 4px;
   outline: none;
   border: none;
-  color: ${Theme.color.purpleDark};
+  color: white;
   cursor: pointer;
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
   font-family: "Poppins", sans-serif;
@@ -22,7 +22,6 @@ export const Btn = styled.button<{ width: string }>`
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     background-image: linear-gradient(to bottom, #2f4dc7, #351d66, #9219be);
-    color: white;
   }
 `;
 
@@ -59,4 +58,10 @@ export const DivArrowBack = styled.div`
     top: 15px;
     left: 15px;
     cursor: pointer;
+`;
+
+export const DivBackground = styled.div`
+  background: url(${img});
+  background-size: cover;
+  background-repeat: no-repeat;
 `;

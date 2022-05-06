@@ -8,6 +8,7 @@ import {
 import { DivArrowBack, Paragraph, TitleGradient } from "../../globalStyles.style";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { TitlePrincipal } from "../about/About.style";
 
 function Contact() {
   const navigate = useNavigate()
@@ -19,7 +20,7 @@ function Contact() {
       </DivArrowBack>
       <ContainerContact>
         <div>
-          <TitleGradient size={"30px"}>Contate-me</TitleGradient>
+          <TitlePrincipal>Contate-me</TitlePrincipal>
           <Paragraph color={'white'}>
             Estou ansiosa para receber uma mensagem sua! Pode ser elogios,
             críticas, perguntas, propostas, tudo é bem-vindo!Encontre-me nas
@@ -28,16 +29,16 @@ function Contact() {
           <DivLinks>
             <Links
               href="https://www.facebook.com/thais.bertoldi"
-              color={"#395498"}
+              color={"#01a6ff"}
             >
               <FaFacebookSquare />
             </Links>
-            <Links href="https://www.instagram.com/thaais__b" color={"#BA318B"}>
+            <Links href="https://www.instagram.com/thaais__b" color={"#ff40bc"}>
               <FaInstagramSquare />
             </Links>
             <Links
               href="https://www.linkedin.com/in/thaisbertoldi"
-              color={"#0073B1"}
+              color={"#01a6ff"}
             >
               <FaLinkedin />
             </Links>
@@ -47,7 +48,7 @@ function Contact() {
             minha evolução nas tecnologias frontend:
           </Paragraph>
           <DivLinks>
-            <Links href="https://github.com/thaisBertoldi" color={"#24292F"}>
+            <Links href="https://github.com/thaisBertoldi" color={"#ffffff"}>
               <FaGithubSquare />
             </Links>
           </DivLinks>

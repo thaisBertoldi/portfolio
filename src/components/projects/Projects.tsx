@@ -1,4 +1,4 @@
-import { Card, ContainerProjects, DivIcons, DivTech } from "./Projects.style";
+import { Card, ContainerProjects, DivIcons, DivTech, DivBackgroundProject } from "./Projects.style";
 import { ACustom, Paragraph, TitleGradient } from "../../globalStyles.style";
 import {
   SiCss3,
@@ -22,20 +22,8 @@ function Projects() {
       {MainProjects.map((project: ProjectDTO, index) => (
         <Card key={index}>
           <TitleGradient size={"20px"}>{project.nome}</TitleGradient>
-          {!visibilityGif && (
-            <img
-              src={project.imgFixa}
-              alt="Primeira pagina do projeto"
-              onClick={() => setVisibilityGif(true)}
-            />
-          )}
-          {visibilityGif && (
-            <img
-              src={project.imgGif}
-              alt="Páginas do projeto Sistema de compras"
-              onClick={() => setVisibilityGif(false)}
-            />
-          )}
+          <DivBackgroundProject background={project.imgFixa} backgroundHover={project.imgGif}>
+          </DivBackgroundProject>
           <DivTech>
             <Paragraph>Tecnologias utilizadas nesse projeto: </Paragraph>
             <DivIcons>
