@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import purpleBackgroundImage from "../../images/background.jpg";
 
 export const ContainerMenu = styled.div`
   display: flex;
@@ -48,6 +49,7 @@ export const HamburguerDiv = styled.div`
   display: flex;
   flex-direction: column;
   position: absolute;
+  background: url(${purpleBackgroundImage});
   top: 8%;
   a {
     color: #dde2ff;

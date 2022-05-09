@@ -29,6 +29,9 @@ export const SecContainer = styled.div`
   @media (max-width: 1200px) {
     padding: 5%;
   }
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 export const TercContainer = styled.div`
@@ -43,14 +46,11 @@ export const ImgCustom = styled.img<{radius: string, width: string, displayMedia
   }
 `;
 
-export const TitlePrincipal = styled.h1`
-  color: white;
-  font-size: 50px;
-  line-height: 30px;
-`;
-
 export const Bio = styled.h2`
   color: white;
+  @media (max-width: 600px) {
+    font-size: 15px;
+  }
 `;
 
 export const BtnDiv = styled.div`

@@ -50,6 +50,9 @@ export const Card = styled.div`
       color: #f4dafd;
     }
   }
+  @media (max-width: 600px) {
+    width: 300px;
+  }
 `;
 
 export const DivTech = styled.div`
@@ -66,12 +69,12 @@ export const DivIcons = styled.div`
 `;
 
 export const DivBackgroundProject = styled.div<{background: string, backgroundHover: string}>`
-  background: url(${props => props.background});
+  background: url(${props => props.background}) center no-repeat;
   height: 200px;
-  background-size: cover;
+  background-size: 100%;
   :hover {
-    background: url(${props => props.backgroundHover});
+    background: url(${props => props.backgroundHover}) center no-repeat;
     height: 200px;
-    background-size: cover;
+    background-size: 100%;
   }
 `;

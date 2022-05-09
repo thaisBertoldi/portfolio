@@ -16,8 +16,8 @@ function Repositories() {
       <DivArrowBack><MdOutlineArrowBackIosNew onClick={() => navigate('/')}/></DivArrowBack>
       <ContainerRepos>
         <DivButton>
-          <Btn width={"500px"} onClick={() => setIsAllRepos(true)} color={Theme.color.blueDark}>
-            Clique aqui para ver todos os repositórios
+          <Btn width={"500px"} widthMediaQuery={'300px'} onClick={() => setIsAllRepos(true)} color={Theme.color.blueDark}>
+            Ver todos os repositórios
           </Btn>
         </DivButton>
         <Projects />

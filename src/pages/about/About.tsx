@@ -3,14 +3,13 @@ import { Link, useNavigate } from "react-router-dom";
 import Loading from "../../components/loading/Loading";
 import Skills from "../../components/skills/Skills";
 import { UserContext } from "../../context/UserContext";
-import { Btn, Paragraph, TitleGradient } from "../../globalStyles.style";
+import { Btn, Paragraph, TitlePrincipal } from "../../globalStyles.style";
 import {
   Bio,
   BtnDiv,
   ImgCustom,
   SecContainer,
   FirstContainer,
-  TitlePrincipal,
   TercContainer,
   DivTitles,
   TitleSection,
@@ -43,6 +42,7 @@ function About() {
             <BtnDiv>
               <Btn
                 width={"200px"}
+                widthMediaQuery={'100px'}
                 color={Theme.color.blueLight}
                 onClick={() => navigate("/repositories")}
               >
@@ -50,6 +50,7 @@ function About() {
               </Btn>
               <Btn
                 width={"200px"}
+                widthMediaQuery={'100px'}
                 color={Theme.color.blueLight}
                 onClick={() => navigate("/contact")}
               >

@@ -10,14 +10,6 @@ export const ContainerContact = styled.div`
   @media (max-width: 1300px) {
     grid-template-columns: auto;
   }
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 28px;
-    }
-    p {
-      font-size: 15px;
-    }
-  }
 `;
 
 export const DivLinks = styled.div`

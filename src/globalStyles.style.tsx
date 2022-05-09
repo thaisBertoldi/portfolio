@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import img from "./images/purple-bg.jpg";
 
-export const Btn = styled.button<{ width: string }>`
+export const Btn = styled.button<{ width: string, widthMediaQuery:string }>`
   width: ${(props) => props.width};
   height: 42px;
   background: ${(props) => props.color};
@@ -22,25 +22,27 @@ export const Btn = styled.button<{ width: string }>`
     transform: scale(1.1);
     background-image: linear-gradient(to bottom, #2f4dc7, #351d66, #9219be);
   }
+  @media (max-width: 600px) {
+    width: ${(props) => props.widthMediaQuery};
+    font-size: 15px;
+  }
 `;
 
-export const TitleGradient = styled.h2<{size: string}>`
-  background-image: linear-gradient(
-    to bottom,
-    #2F4DC7,
-    #351D66,
-    #9219BE
-  );
+export const TitleGradient = styled.h2<{ size: string }>`
+  background-image: linear-gradient(to bottom, #2f4dc7, #351d66, #9219be);
   color: black;
-  font-size: ${props => props.size};
+  font-size: ${(props) => props.size};
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
 
 export const Paragraph = styled.p`
-    color: ${props => props.color};
-    font-size: 18px;
+  color: ${(props) => props.color};
+  font-size: 18px;
+  @media (max-width: 600px) {
+    font-size: 15px;
+  }
 `;
 
 export const ACustom = styled.a`
@@ -55,16 +57,25 @@ export const ACustom = styled.a`
 `;
 
 export const DivArrowBack = styled.div`
-    font-size: 30px;
-    color: white;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    cursor: pointer;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
 `;
 
 export const DivBackground = styled.div`
   background: url(${img});
   background-size: cover;
   background-repeat: no-repeat;
+`;
+
+export const TitlePrincipal = styled.h1`
+  color: white;
+  font-size: 50px;
+  line-height: 30px;
+  @media (max-width: 600px) {
+    font-size: 28px;
+  }
 `;

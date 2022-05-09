@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { MdMenu } from "react-icons/md";
+import ListLinkPages from "./ListLinkPages";
 import {
+  List,
   ContainerMenu,
   HamburguerDiv,
-  Item,
-  LinkCustom,
-  List,
   MenuHamburguer,
 } from "./Menu.style";
 
@@ -18,31 +17,13 @@ export default function Menu() {
       </MenuHamburguer>
       {openHamburguer && (
         <HamburguerDiv>
-            <Item>
-              <LinkCustom to="/">Sobre mim</LinkCustom>
-            </Item>
-            <Item>
-              <LinkCustom to="/repositories">Repositórios</LinkCustom>
-            </Item>
-            <Item>
-              <LinkCustom to="/contact">Contato</LinkCustom>
-            </Item>
+          <ListLinkPages />
         </HamburguerDiv>
       )}
       <ContainerMenu>
-        <nav>
-          <List>
-            <Item>
-              <LinkCustom to="/">Sobre mim</LinkCustom>
-            </Item>
-            <Item>
-              <LinkCustom to="/repositories">Repositórios</LinkCustom>
-            </Item>
-            <Item>
-              <LinkCustom to="/contact">Contato</LinkCustom>
-            </Item>
-          </List>
-        </nav>
+        <List>
+          <ListLinkPages />
+        </List>
       </ContainerMenu>
     </>
   );
