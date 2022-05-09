@@ -5,7 +5,7 @@ import {
   FaFacebookSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
-import { DivArrowBack, Paragraph, TitleGradient } from "../../globalStyles.style";
+import { DivArrowBack, Paragraph } from "../../globalStyles.style";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { TitlePrincipal } from "../about/About.style";

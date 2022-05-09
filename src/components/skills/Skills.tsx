@@ -1,11 +1,10 @@
-import React from "react";
-import { Card, ContainerSkills, Img} from "./Skills.style";
 import html from "../../images/html.png";
 import css from "../../images/css.png";
 import js from "../../images/js.png";
 import react from "../../images/react.png";
 import ts from "../../images/ts.png";
 import redux from "../../images/Redux.png";
+import { Card, ContainerSkills, Img} from "./Skills.style";
 import { TitleGradient } from "../../globalStyles.style";
 
 function Skills() {

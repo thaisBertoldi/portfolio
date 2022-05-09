@@ -27,7 +27,7 @@ const ModalRepositories = ({ onClick }: ModalRepositoriesDTO) => {
                 <PDataGit>{el.name}</PDataGit>
                 <ACustom href={el.html_url}>{el.html_url}</ACustom>
                 <PDataGit>{el.language}</PDataGit>
-                <PDataGit>{moment(el.updated_at, 'YYYY-MM-DD,h:mm:ss').format('DD-MM-YYYY')}</PDataGit>
+                <PDataGit>{moment(el.updated_at, 'YYYY-MM-DD,h:mm:ss').format('DD/MM/YYYY')}</PDataGit>
               </CardRepo>
             )
         })}

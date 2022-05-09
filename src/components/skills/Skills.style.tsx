@@ -1,11 +1,18 @@
 import styled from "styled-components";
 
 export const ContainerSkills = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
   gap: 15px;
   align-items: center;
   justify-content: center;
   padding: 15px;
+  @media (max-width: 1300px) {
+    grid-template-columns: auto auto auto;
+  }
+  @media (max-width: 700px) {
+    grid-template-columns: auto auto;
+  }
 `;
 
 export const Card = styled.div`

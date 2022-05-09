@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Theme } from "./theme";
 import img from "./images/purple-bg.jpg";
 
 export const Btn = styled.button<{ width: string }>`
@@ -49,6 +48,10 @@ export const ACustom = styled.a`
   :hover {
     text-decoration: underline;
   }
+  max-width: 55ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 export const DivArrowBack = styled.div`

@@ -9,6 +9,12 @@ export const ContainerProjects = styled.div`
   justify-content: center;
   gap: 15px;
   margin-bottom: 30px;
+  @media (max-width: 1360px) {
+    grid-template-columns: auto auto;
+  }
+  @media (max-width: 1000px) {
+    grid-template-columns: auto;
+  }
 `;
 
 export const Card = styled.div`

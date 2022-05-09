@@ -1,4 +1,3 @@
-import React from 'react'
 import Menu from '../menu/Menu'
 import { ContainerHeader } from './Header.style'
 

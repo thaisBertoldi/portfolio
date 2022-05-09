@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Theme } from "../../theme";
 
 export const ContainerContact = styled.div`
   display: grid;
@@ -8,6 +7,17 @@ export const ContainerContact = styled.div`
   justify-content: center;
   height: 76vh;
   margin: 0 100px;
+  @media (max-width: 1300px) {
+    grid-template-columns: auto;
+  }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
 `;
 
 export const DivLinks = styled.div`

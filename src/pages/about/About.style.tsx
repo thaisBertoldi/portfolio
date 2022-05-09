@@ -3,10 +3,20 @@ import img from "../../images/purple-bg.jpg";
 
 export const FirstContainer = styled.div`
   display: grid;
-  grid-template-columns: 30% auto;
+  grid-template-columns: auto 30%;
   justify-content: center;
+  gap: 30px;
   height: 600px;
   align-items: center;
+  @media (max-width: 1200px) {
+    grid-template-columns: auto;
+  }
+`;
+
+export const DivNameButtons = styled.div`
+  @media (max-width: 1200px) {
+    text-align: center;
+  }
 `;
 
 export const SecContainer = styled.div`
@@ -16,15 +26,21 @@ export const SecContainer = styled.div`
   gap: 10px;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1200px) {
+    padding: 5%;
+  }
 `;
 
 export const TercContainer = styled.div`
   background: #919bf3;
 `;
 
-export const ImgCustom = styled.img<{radius: string, width: string}>`
+export const ImgCustom = styled.img<{radius: string, width: string, displayMedia: string}>`
   border-radius: ${props => props.radius};
   width: ${props => props.width};
+  @media (max-width: 1200px) {
+    display: ${props => props.displayMedia};
+  }
 `;
 
 export const TitlePrincipal = styled.h1`

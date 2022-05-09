@@ -9,13 +9,10 @@ import {
   SiJavascript,
   SiStyledcomponents,
 } from "react-icons/si";
-import { useState } from "react";
 import { MainProjects } from "../../service/MainProjects";
 import { ProjectDTO } from "../../models/AllDTOs";
 
 function Projects() {
-
-  const [visibilityGif, setVisibilityGif] = useState(false);
 
   return (
     <ContainerProjects>

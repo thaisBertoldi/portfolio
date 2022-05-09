@@ -48,11 +48,18 @@ export const CardRepo = styled.div`
   :nth-child(even) {
     background-color: #c6e5f5;
   }
-  @media (max-width: 768px) {
-    grid-template-columns: auto;
+  @media (max-width: 900px) {
+    grid-template-columns: 25% 40% 15% auto;
   }
 `;
 
 export const PDataGit = styled.p`
   color: #013477;
+  max-width: 25ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  @media (max-width: 900px) {
+    
+  }
 `;

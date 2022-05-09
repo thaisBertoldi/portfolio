@@ -14,6 +14,7 @@ import {
   TercContainer,
   DivTitles,
   TitleSection,
+  DivNameButtons,
 } from "./About.style";
 import meImg from "../../images/me.jpg";
 import { Theme } from "../../theme";
@@ -28,7 +29,14 @@ function About() {
         <Loading />
       ) : (
         <FirstContainer>
-          <div>
+          <ImgCustom
+            src={dataUser.avatar_url}
+            alt="Imagem de perfil"
+            radius={"50%"}
+            width={"400px"}
+            displayMedia={'none'}
+          />
+          <DivNameButtons>
             <TitlePrincipal>Olá! Eu sou a</TitlePrincipal>
             <TitlePrincipal>{dataUser.name}</TitlePrincipal>
             <Bio>Desenvolvedora Front-End</Bio>
@@ -48,41 +56,29 @@ function About() {
                 Contato
               </Btn>
             </BtnDiv>
-          </div>
-          <div>
-            <ImgCustom
-              src={dataUser.avatar_url}
-              alt="Imagem de perfil"
-              radius={"50%"}
-              width={"400px"}
-            />
-          </div>
+          </DivNameButtons>
         </FirstContainer>
       )}
       <DivTitles>
         <TitleSection>Sobre mim</TitleSection>
       </DivTitles>
       <SecContainer>
-        <div>
-          <ImgCustom
-            src={meImg}
-            alt="Uma foto minha"
-            radius={"10%"}
-            width={"200px"}
-          />
-        </div>
-        <div>
-          <Paragraph color={"white"}>
-            Meu nome é Thais Bertoldi, tenho 27 anos, moro no interior de Santa
-            Catarina e sou apaixonada por tecnologia. Tenho adquirido
-            conhecimento em várias tecnologias para me profissionalizar na área
-            de desenvolvimento front-end, como, por exemplo, Javascript,
-            Typescript, React e Redux. Fiz o programa Vem Ser DBC, da empresa
-            DBC Company, e tive a oportunidade de realizar diversos projetos.
-            Sou especializada na Lei Geral de Proteção de Dados pela
-            Assespro-RS.
-          </Paragraph>
-        </div>
+        <ImgCustom
+          src={meImg}
+          alt="Uma foto minha"
+          radius={"10%"}
+          width={"200px"}
+          displayMedia={'flex'}
+        />
+        <Paragraph color={"white"}>
+          Meu nome é Thais Bertoldi, tenho 27 anos, moro no interior de Santa
+          Catarina e sou apaixonada por tecnologia. Tenho adquirido conhecimento
+          em várias tecnologias para me profissionalizar na área de
+          desenvolvimento front-end, como, por exemplo, Javascript, Typescript,
+          React e Redux. Fiz o programa Vem Ser DBC, da empresa DBC Company, e
+          tive a oportunidade de realizar diversos projetos. Sou especializada
+          na Lei Geral de Proteção de Dados pela Assespro-RS.
+        </Paragraph>
       </SecContainer>
       <DivTitles>
         <TitleSection>Tecnologias</TitleSection>
