@@ -3,18 +3,33 @@ import img from "../../images/background.jpg";
 import { Theme } from "../../theme";
 
 export const ContainerProjects = styled.div`
-  display: grid;
+  /* display: grid;
   grid-template-columns: auto auto auto;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  display: flex;
+  overflow-x:  scroll;
+  padding: 10px;
+
+  & > div {
+    flex-shrink:  0;
+  }
   gap: 15px;
-  margin-bottom: 30px;
+  margin: 10px;
+  &::-webkit-scrollbar {
+    height: 30px;
+    background: gray;
+  }
+  &::-webkit-scrollbar-thumb:horizontal{
+        background: #2f4dc7;
+        border-radius: 10px;
+    }
   @media (max-width: 1360px) {
-    grid-template-columns: auto auto;
+    /* grid-template-columns: auto auto; */
   }
   @media (max-width: 1000px) {
-    grid-template-columns: auto;
-  }
+    /* grid-template-columns: auto; */
+  } 
 `;
 
 export const Card = styled.div`
@@ -25,18 +40,10 @@ export const Card = styled.div`
   background-color: #fff;
   border-radius: 15px;
   padding-bottom: 20px;
-  -webkit-box-shadow: 0px 1px 20px 1px #201D64;
-  box-shadow: 0px 1px 20px 1px #201D64;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   a {
     margin-top: 10px;
   }
   :hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
     background: url(${img});
     background-size: cover;
     h2 {

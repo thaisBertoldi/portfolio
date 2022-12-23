@@ -1,30 +1,31 @@
 import { useState } from "react";
-import { MdMenu } from "react-icons/md";
 import ListLinkPages from "./ListLinkPages";
-import {
-  List,
-  ContainerMenu,
-  HamburguerDiv,
-  MenuHamburguer,
-} from "./Menu.style";
+import { Bar, MenuBar, MenuDiv } from './Menu.style';
+import './style.css';
 
 export default function Menu() {
   const [openHamburguer, setOpenHamburguer] = useState<boolean>(false);
+
+  function menuOnClick() {
+    document.getElementById("menu-bar")?.classList.toggle("change");
+    document.getElementById("nav")?.classList.toggle("change");
+    document.getElementById("menu-bg")?.classList.toggle("change-bg");
+  }
+
   return (
     <>
-      <MenuHamburguer>
-        <MdMenu onClick={() => setOpenHamburguer(!openHamburguer)} />
-      </MenuHamburguer>
-      {openHamburguer && (
-        <HamburguerDiv>
+      <MenuDiv id="menu">
+        <MenuBar id="menu-bar" onClick={() => menuOnClick()}>
+          <Bar id="bar1" ></Bar>
+          <Bar id="bar2"></Bar>
+          <Bar id="bar3"></Bar>
+        </MenuBar>
+        <nav className="nav" id="nav">
           <ListLinkPages />
-        </HamburguerDiv>
-      )}
-      <ContainerMenu>
-        <List>
-          <ListLinkPages />
-        </List>
-      </ContainerMenu>
+        </nav>
+      </MenuDiv>
+
+      <div className="menu-bg" id="menu-bg"></div>
     </>
   );
 }

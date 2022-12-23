@@ -1,21 +1,7 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import purpleBackgroundImage from "../../images/background.jpg";
 
-export const ContainerMenu = styled.div`
-  display: flex;
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const List = styled.ul`
-  display: flex;
-  gap: 50px;
-  list-style: none;
-`;
-
-export const LinkCustom = styled(Link)`
+export const LinkCustom = styled.a`
   text-decoration: none;
   color: white;
   font-size: 20px;
@@ -33,30 +19,22 @@ export const Item = styled.li`
   }
 `;
 
-
-export const MenuHamburguer = styled.div`
-  color: white;
-  font-size: 20px;
-  display: none;
-  @media (max-width: 768px) {
-    display: flex;
-    padding-left: 75%;
-  }
+export const MenuDiv = styled.div`
+    z-index: 2;
 `;
 
-export const HamburguerDiv = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background: url(${purpleBackgroundImage});
-  top: 8%;
-  a {
-    color: #dde2ff;
-    text-decoration: none; 
-    padding-left: 70%;
-  }
-  @media (min-width: 768px) {
-    display: none;
-  }
+export const MenuBar = styled.div`
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+`;
+
+export const Bar = styled.div`
+    height: 5px;
+    width: 100%;
+    background-color: #e6e0e0;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
 `;

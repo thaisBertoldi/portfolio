@@ -1,15 +1,11 @@
 import styled from "styled-components";
 
+export const CardContainer = styled.div`
+
+`;
+
 export const ContainerContact = styled.div`
-  display: grid;
-  grid-template-columns: 50% 50%;
-  align-items: center;
-  justify-content: center;
-  height: 76vh;
-  margin: 0 100px;
-  @media (max-width: 1300px) {
-    grid-template-columns: auto;
-  }
+  margin: 10px;
 `;
 
 export const DivLinks = styled.div`

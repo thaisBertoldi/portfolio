@@ -71,7 +71,7 @@ export const DivBackground = styled.div`
   background-repeat: no-repeat;
 `;
 
-export const TitlePrincipal = styled.h1`
+export const TitlePrincipal = styled.div`
   color: white;
   font-size: 50px;
   line-height: 30px;

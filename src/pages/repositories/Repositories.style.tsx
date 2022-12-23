@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const ContainerRepos = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
 `;
 
 export const DivButton = styled.div`

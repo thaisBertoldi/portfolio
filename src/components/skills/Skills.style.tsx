@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerSkills = styled.div`
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
   gap: 15px;
   align-items: center;
   justify-content: center;
@@ -19,9 +19,11 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
-  height: 250px;
-  border-radius: 15px;
+  width: 100px;
+  padding: 5px;
+  height: 130px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
   justify-content: center;
   background-color: white;
   -moz-transition: all 0.3s;
@@ -31,12 +33,13 @@ export const Card = styled.div`
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    -webkit-box-shadow: 0px 1px 31px 9px #351D66;
-    box-shadow: 0px 1px 31px 9px #351D66;
+    -webkit-box-shadow: 19px 21px 20px -3px rgba(53,29,102,0.6);
+-moz-box-shadow: 19px 21px 20px -3px rgba(53,29,102,0.6);
+box-shadow: 19px 21px 20px -3px rgba(53,29,102,0.6);
   }
 `;
 
 export const Img = styled.img`
-  width: 60%;
-  height: 50%;
+  width: 50%;
+  height: 40%;
 `;

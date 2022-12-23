@@ -1,13 +1,11 @@
-import { Copyright, FooterContainer } from "./Footer.style";
+import { FaArrowAltCircleUp } from "react-icons/fa";
+import { LinkCustom } from "../menu/Menu.style";
+import { Copyright, DivTopo, FooterContainer } from "./Footer.style";
 
 export default function Footer() {
   return (
     <FooterContainer>
-      <Copyright>
-        <small>
-          ©{new Date().getFullYear()} Copyright
-        </small>
-      </Copyright>
+      <LinkCustom href="#"><DivTopo><FaArrowAltCircleUp /></DivTopo></LinkCustom>
     </FooterContainer>
   );
 }
