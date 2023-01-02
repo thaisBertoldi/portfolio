@@ -17,18 +17,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function Skills() {
   return (
-    <ContainerSkills className='text-center'>
-      <Carousel
-      useKeyboardArrows
-      transitionTime={5000}
-      infiniteLoop
-      swipeScrollTolerance={12}
-      width={1200}
-      centerMode
-      centerSlidePercentage={10}
-      autoPlay
-      showStatus={false}
-      >
+    <ContainerSkills >
       <Card>
         <Img src={html} alt="logo html" />
         <TitleGradient size={'15px'}>HTML</TitleGradient>
@@ -77,7 +66,6 @@ function Skills() {
         <Img src={styled} alt="logo styled" />
         <TitleGradient size={'15px'}>Styled Components</TitleGradient>
       </Card>
-      </Carousel>
     </ContainerSkills>
   );
 }

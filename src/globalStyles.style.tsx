@@ -74,7 +74,6 @@ export const DivBackground = styled.div`
 export const TitlePrincipal = styled.div`
   color: white;
   font-size: 50px;
-  line-height: 30px;
   @media (max-width: 600px) {
     font-size: 28px;
   }

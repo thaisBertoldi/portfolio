@@ -1,17 +1,19 @@
 import styled from "styled-components";
 
 export const ContainerSkills = styled.div`
-  padding: 15px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   justify-content: center;
+  gap: 10px;
 `;
 
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-radius: 10%;
-  margin: 0 5px;
-  height: 250px;
+  padding: 0 5px;
+  height: 200px;
   justify-content: center;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -27,6 +29,6 @@ export const Card = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 50%;
+  width: 80%;
   height: 40%;
 `;
