@@ -3,12 +3,10 @@ import img from "../../images/background.jpg";
 import { Theme } from "../../theme";
 
 export const ContainerProjects = styled.div`
-  /* display: grid;
+  display: grid;
   grid-template-columns: auto auto auto;
   align-items: center;
-  justify-content: center; */
-  display: flex;
-  overflow-x:  scroll;
+  justify-content: center;
   padding: 10px;
 
   & > div {

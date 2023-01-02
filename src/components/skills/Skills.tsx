@@ -12,10 +12,23 @@ import sass from "../../images/sass.png"
 import styled from "../../images/styled.png"
 import { Card, ContainerSkills, Img} from "./Skills.style";
 import { TitleGradient } from "../../globalStyles.style";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function Skills() {
   return (
-    <ContainerSkills>
+    <ContainerSkills className='text-center'>
+      <Carousel
+      useKeyboardArrows
+      transitionTime={5000}
+      infiniteLoop
+      swipeScrollTolerance={12}
+      width={1200}
+      centerMode
+      centerSlidePercentage={10}
+      autoPlay
+      showStatus={false}
+      >
       <Card>
         <Img src={html} alt="logo html" />
         <TitleGradient size={'15px'}>HTML</TitleGradient>
@@ -64,6 +77,7 @@ function Skills() {
         <Img src={styled} alt="logo styled" />
         <TitleGradient size={'15px'}>Styled Components</TitleGradient>
       </Card>
+      </Carousel>
     </ContainerSkills>
   );
 }
