@@ -23,10 +23,10 @@ export const ContainerProjects = styled.div`
         border-radius: 10px;
     }
   @media (max-width: 1360px) {
-    /* grid-template-columns: auto auto; */
+    grid-template-columns: auto auto;
   }
   @media (max-width: 1000px) {
-    /* grid-template-columns: auto; */
+    grid-template-columns: auto;
   } 
 `;
 

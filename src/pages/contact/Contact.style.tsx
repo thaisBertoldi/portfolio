@@ -1,13 +1,16 @@
 import styled from "styled-components";
+import imgBackground from "../../images/background.jpg"
 
 export const CardContainer = styled.div`
   margin: 5%;
+  padding: 10px;
   display: grid;
   grid-template-columns: 50% 50%;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  background-color: #25b7fa;
+  background: url(${imgBackground}) no-repeat;
+  background-size: cover;
 `;
 
 export const ContainerContact = styled.div`
@@ -30,6 +33,10 @@ export const ContainerForm = styled.div`
     ::placeholder {
       font-family: 'Times New Roman', Times, serif;
     }
+  }
+
+  textarea {
+    max-width: 100%;
   }
   
   #message {
@@ -70,4 +77,10 @@ export const Links = styled.a`
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
+`;
+
+export const AlertErrorInput = styled.p`
+  color: red;
+  font-size: 10px;
+  margin: 0;
 `;
