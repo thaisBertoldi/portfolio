@@ -54,9 +54,3 @@ export interface ProjectDTO {
     html: boolean;
   };
 }
-
-export interface EmailDTO {
-  name: string;
-  email: string;
-  message: string;
-}

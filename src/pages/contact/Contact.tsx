@@ -1,10 +1,14 @@
-import { Field, Form, Formik, useFormik } from "formik";
+import emailjs from "emailjs-com";
+import { FormikValues, useFormik } from "formik";
+import Notiflix from "notiflix";
+import { useState } from "react";
 import {
   FaFacebookSquare,
   FaGithubSquare,
   FaInstagramSquare,
   FaLinkedin,
 } from "react-icons/fa";
+import * as Yup from "yup";
 import { Paragraph } from "../../globalStyles.style";
 import { DivTitles, TitleSection } from "../about/About.style";
 import {
@@ -15,32 +19,58 @@ import {
   DivField,
   DivLinks,
   Links,
+  Loading,
 } from "./Contact.style";
-import Notiflix from "notiflix";
-import { EmailDTO } from "../../models/AllDTOs";
-import * as Yup from "yup";
 
 function Contact() {
-  const sendEmail = (values: EmailDTO) => {
-    Notiflix.Notify.success("Email enviado. Obrigada!");
-    console.log(values);
-  };
+  const [isLoading, setIsLoading] = useState(false);
 
   const formik = useFormik({
     initialValues: {
       name: "",
+      subject: "",
       email: "",
       message: "",
     },
     validationSchema: Yup.object({
-      message: Yup.string()
-      .required("Preencha esse campo para enviar sua mensagem"),
+      name: Yup.string().required(
+        "Preencha esse campo para enviar sua mensagem"
+      ),
+      subject: Yup.string().required(
+        "Preencha esse campo para enviar sua mensagem"
+      ),
+      message: Yup.string().required(
+        "Preencha esse campo para enviar sua mensagem"
+      ),
       email: Yup.string()
-      .matches(/\w+@\w+\.\w{1,3}\.?\w{2}?$/i, "Esse campo precisa ser preenchido com um email válido")
-      .required("Preencha esse campo para enviar sua mensagem")
+        .matches(
+          /\w+@\w+\.\w{1,3}\.?\w{2}?$/i,
+          "Esse campo precisa ser preenchido com um email válido"
+        )
+        .required("Preencha esse campo para enviar sua mensagem"),
     }),
-    onSubmit: (values: EmailDTO) => {
-      sendEmail(values);
+    onSubmit: (values: FormikValues) => {
+      setIsLoading(true);
+      emailjs
+        .send(
+          "service_9tt517a",
+          "template_75iibwo",
+          values,
+          "LhUkBMSFm-NwLdYqQ"
+        )
+        .then(
+          (result) => {
+            setIsLoading(false);
+            Notiflix.Notify.success("Email enviado. Obrigada!");
+            formik.resetForm();
+          },
+          (error) => {
+            setIsLoading(false);
+            Notiflix.Notify.failure(
+              "Não foi possivel enviar a mensagem. Por favor, tente novamente"
+            );
+          }
+        );
     },
   });
 
@@ -88,17 +118,39 @@ function Contact() {
             <DivField>
               <label htmlFor="name">Nome</label>
               <input
+                maxLength={50}
                 id="name"
                 name="name"
                 placeholder="Nome"
                 value={formik.values.name}
                 onChange={formik.handleChange}
               />
+              {formik.errors.name && formik.touched.name ? (
+                <AlertErrorInput>{formik.errors.name}</AlertErrorInput>
+              ) : null}
+            </DivField>
+
+            <DivField>
+              <label htmlFor="subject">Assunto</label>
+              <input
+                maxLength={50}
+                id="subject"
+                name="subject"
+                type="text"
+                autoComplete="off"
+                placeholder="Assunto"
+                onChange={formik.handleChange}
+                value={formik.values.subject}
+              />
+              {formik.errors.subject && formik.touched.subject ? (
+                <AlertErrorInput>{formik.errors.subject}</AlertErrorInput>
+              ) : null}
             </DivField>
 
             <DivField>
               <label htmlFor="email">Email</label>
               <input
+                maxLength={50}
                 id="email"
                 name="email"
                 placeholder="email@email.com"
@@ -107,25 +159,30 @@ function Contact() {
                 onChange={formik.handleChange}
               />
               {formik.errors.email && formik.touched.email ? (
-                  <AlertErrorInput>{formik.errors.email}</AlertErrorInput>
-                ) : null}
+                <AlertErrorInput>{formik.errors.email}</AlertErrorInput>
+              ) : null}
             </DivField>
 
             <DivField>
               <label htmlFor="message">Mensagem</label>
               <textarea
+                maxLength={150}
                 id="message"
                 name="message"
-                placeholder="Digite sua mensagem"
+                placeholder="150 caracteres permitidos"
                 value={formik.values.message}
                 onChange={formik.handleChange}
               />
               {formik.errors.message && formik.touched.message ? (
-                  <AlertErrorInput>{formik.errors.message}</AlertErrorInput>
-                ) : null}
+                <AlertErrorInput>{formik.errors.message}</AlertErrorInput>
+              ) : null}
             </DivField>
-
-            <button type="submit">Submit</button>
+            {!isLoading && <button type="submit">Enviar mensagem</button>}
+            {isLoading && (
+              <button type="submit" disabled>
+                <Loading />
+              </button>
+            )}
           </ContainerForm>
         </form>
       </CardContainer>
