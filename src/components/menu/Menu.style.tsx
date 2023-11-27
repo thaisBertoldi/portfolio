@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import purpleBackgroundImage from "../../images/background.jpg";
 
 export const LinkCustom = styled.a`
   text-decoration: none;

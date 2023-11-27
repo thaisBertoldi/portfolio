@@ -65,11 +65,11 @@ function About() {
           Catarina e sou apaixonada por tecnologia. Tenho adquirido conhecimento
           em várias tecnologias para me profissionalizar na área de
           desenvolvimento frontend, como, por exemplo, <b>Javascript</b>,{" "}
-          <b>Typescript</b>, <b>React</b>, <b>Angular</b>, <b>Redux</b> e{" "}
+          <b>Typescript</b>, <b>React</b>, <b>Angular</b>, <b>Vuejs</b>, <b>Redux</b> e{" "}
           <b>Node</b>. Fiz o programa <b>Vem Ser DBC</b>, da empresa DBC Company, e
           tive a oportunidade de realizar diversos projetos. Sou especializada
           na <b>Lei Geral de Proteção de Dados</b> pela Assespro-RS. Atualmente,
-          trabalho no projeto <b>OpenFinance</b> do Banco Sicredi.
+          trabalho no projeto <b>OpenFinance</b> da Cooperativa Sicredi.
         </Paragraph>
       </SecContainer>
       <DivTitles>

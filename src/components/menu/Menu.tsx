@@ -1,10 +1,8 @@
-import { useState } from "react";
 import ListLinkPages from "./ListLinkPages";
 import { Bar, MenuBar, MenuDiv } from './Menu.style';
 import './style.css';
 
 export default function Menu() {
-  const [openHamburguer, setOpenHamburguer] = useState<boolean>(false);
 
   function menuOnClick() {
     document.getElementById("menu-bar")?.classList.toggle("change");

@@ -1,8 +1,8 @@
 export const Theme = {
     color: {
-        purpleDark: "#4A3062",
+        purpleDark: "#000000",
         purpleLight: "#C7C7C7",
-        purpleNormal: "#63306A",
+        purpleNormal: "#000000",
         blueDark: "#00779b",
         blueLight: "#93C4DC"
       },

@@ -29,7 +29,7 @@ export const Btn = styled.button<{ width: string, widthMediaQuery:string }>`
 `;
 
 export const TitleGradient = styled.h2<{ size: string }>`
-  background-image: linear-gradient(to bottom, #2f4dc7, #351d66, #9219be);
+  background-image: linear-gradient(to bottom, #2f4dc7, #afa4c5, #f2f0f3);
   color: black;
   font-size: ${(props) => props.size};
   background-clip: text;
