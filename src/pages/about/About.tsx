@@ -45,7 +45,7 @@ function About() {
                 Olá, eu sou a Thais Bertoldi
               </motion.h1>
             </TitlePrincipal>
-            <Bio>Desenvolvedora Front-End</Bio>
+            <Bio>Desenvolvedora Full-stack</Bio>
           </DivNameButtons>
           <ImgCustom
             src={meImg}
@@ -64,8 +64,8 @@ function About() {
           Meu nome é <b>Thais Bertoldi</b>, tenho 28 anos, moro no interior de Santa
           Catarina e sou apaixonada por tecnologia. Tenho adquirido conhecimento
           em várias tecnologias para me profissionalizar na área de
-          desenvolvimento frontend, como, por exemplo, <b>Javascript</b>,{" "}
-          <b>Typescript</b>, <b>React</b>, <b>Angular</b>, <b>Vuejs</b>, <b>Redux</b> e{" "}
+          desenvolvimento fullstack, como, por exemplo, <b>Java</b>, <b>Spring</b>, <b>Microsserviços</b>, <b>Webflux</b>, 
+          {" "}<b>Javascript</b>, <b>Typescript</b>, <b>React</b>, <b>Angular</b>, <b>Vuejs</b>, <b>Redux</b> e{" "}
           <b>Node</b>. Fiz o programa <b>Vem Ser DBC</b>, da empresa DBC Company, e
           tive a oportunidade de realizar diversos projetos. Sou especializada
           na <b>Lei Geral de Proteção de Dados</b> pela Assespro-RS. Atualmente,
