@@ -1,10 +1,19 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const rotate = keyframes`
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+`
 
 export const ContainerSkills = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   justify-content: center;
   gap: 10px;
+  height: 250px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
 `;
 
 export const Card = styled.div`
@@ -13,7 +22,8 @@ export const Card = styled.div`
   align-items: center;
   border-radius: 10%;
   padding: 0 5px;
-  height: 200px;
+  height: 300px;
+	width: 250px;
   justify-content: center;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -31,4 +41,10 @@ export const Card = styled.div`
 export const Img = styled.img`
   width: 80%;
   height: 40%;
+`;
+
+export const SlideTrack = styled.div`
+	animation: ${rotate} 40s linear infinite;
+	display: flex;
+	width: calc(250px * 14);
 `;
