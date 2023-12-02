@@ -61,7 +61,7 @@ function About() {
       </DivTitles>
       <SecContainer id="about">
         <Paragraph color={"white"}>
-          Meu nome é <b>Thais Bertoldi</b>, tenho 28 anos, moro no interior de Santa
+          Meu nome é <b>Thais Bertoldi</b>, tenho 28 anos, moro em de Santa
           Catarina e sou apaixonada por tecnologia. Tenho adquirido conhecimento
           em várias tecnologias para me profissionalizar na área de
           desenvolvimento fullstack, como, por exemplo, <b>Java</b>, <b>Spring</b>, <b>Microsserviços</b>, <b>Webflux</b>, 
@@ -69,7 +69,7 @@ function About() {
           <b>Node</b>. Fiz o programa <b>Vem Ser DBC</b>, da empresa DBC Company, e
           tive a oportunidade de realizar diversos projetos. Sou especializada
           na <b>Lei Geral de Proteção de Dados</b> pela Assespro-RS. Atualmente,
-          trabalho no projeto <b>OpenFinance</b> da Cooperativa Sicredi.
+          trabalho no projeto <b>OpenFinance</b>.
         </Paragraph>
       </SecContainer>
       <DivTitles>
