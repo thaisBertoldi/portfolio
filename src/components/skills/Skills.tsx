@@ -17,12 +17,20 @@ import spring from "../../images/spring.png";
 import android from "../../images/android.png";
 import webflux from "../../images/webflux.png";
 import { Card, ContainerSkills, Img, SlideTrack } from "./Skills.style";
+import ModalInfo from "../modal/ModalInfo.component";
+import { useState } from "react";
+import { ModalDTO } from "../../models/ModalComponentDTO";
 
 function Skills() {
+  const [openModal, setopenModal] = useState<ModalDTO>({
+    open: false,
+    id: 0,
+  });
+
   return (
     <ContainerSkills>
       <SlideTrack>
-        <Card>
+        <Card onClick={() => setopenModal({ open: true })}>
           <Img src={java} alt="logo java" />
           <TitleGradient size={"15px"}>JAVA</TitleGradient>
         </Card>
@@ -87,6 +95,7 @@ function Skills() {
           <TitleGradient size={"15px"}>Styled Components</TitleGradient>
         </Card>
       </SlideTrack>
+      {openModal.open && <ModalInfo onClick={() => setopenModal({ open: false })} />}
     </ContainerSkills>
   );
 }

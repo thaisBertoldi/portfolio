@@ -1,11 +1,15 @@
-import { BtnClose, ContainerModal, Modal } from "./Modal.style";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { ModalComponentDTO } from "../../models/ModalComponentDTO";
+import { BtnClose, ContainerModal, Modal } from "./Modal.style";
 
-const ModalInfo = () => {
+const ModalInfo = ({ onClick, id }: ModalComponentDTO) => {
   return (
     <ContainerModal>
       <Modal>
-      <BtnClose> <AiFillCloseCircle /> </BtnClose>
+        <BtnClose onClick={onClick}>
+          {" "}
+          <AiFillCloseCircle />{" "}
+        </BtnClose>
       </Modal>
     </ContainerModal>
   );
