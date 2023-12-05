@@ -14,13 +14,12 @@ export const ContainerModal = styled.div`
 
 export const Modal = styled.div`
   width: 70%;
-  max-height: 80%;
+  height: 400px;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  overflow-y: scroll;
 
   @media (max-width: 1024px) {
     width: 90%;

@@ -13,8 +13,17 @@ import {
   TitleSection,
 } from "./About.style";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { ModalDTO } from "../../models/ModalComponentDTO";
+import ModalInfo from "../../components/modal/ModalInfo.component";
 
 function About() {
+
+  const [openModal, setopenModal] = useState<ModalDTO>({
+    open: false,
+    id: 0,
+  });
+
   return (
     <div>
       <Section id="home">
@@ -74,10 +83,12 @@ function About() {
       </SecContainer>
       <DivTitles>
         <TitleSection id="skills">Tecnologias</TitleSection>
+        <p onClick={() => setopenModal({ open: true })}>Algo aqui</p>
       </DivTitles>
       <TercContainer>
         <Skills />
       </TercContainer>
+      {openModal.open && <ModalInfo onClick={() => setopenModal({ open: false })} />}
     </div>
   );
 }

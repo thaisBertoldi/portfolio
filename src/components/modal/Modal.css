@@ -1,0 +1,72 @@
+.col-six, .col-1-2 {
+    column-count: 2;
+    column-gap: 10px;
+}
+
+.skill-bars {
+    list-style: none;
+}
+
+.skill-bars li {
+    height: 0.6rem;
+    background: #a1a1a1;
+    width: 100%;
+    margin-bottom: 6rem;
+    padding: 0;
+    position: relative;
+}
+
+li {
+    display: list-item;
+}
+
+/* colocar logica da porcentagem aqui */
+.skill-bars li .percent94 {
+    width: 94%;
+}
+
+.skill-bars li .progress {
+    background: #002b33;
+    position: relative;
+    height: 100%;
+}
+
+.skill-bars li .progress span {
+    position: absolute;
+    right: 0;
+    top: -3.6rem;
+    display: block;
+    font-family: "poppins-regular", sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1;
+    background: #002b33;
+    padding: 0.6rem 0.6rem;
+    border-radius: 3px;
+}
+
+.skill-bars li .progress span::after {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -5px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #002b33;
+    content: "";
+    font-family: "poppins-regular", sans-serif;
+    color: white;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.skill-bars li strong {
+    position: absolute;
+    left: 0;
+    top: -3rem;
+    font-family: "poppins-bold", sans-serif;
+    color: #002b33;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1rem;
+}

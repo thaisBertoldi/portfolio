@@ -62,6 +62,8 @@ export const BtnDiv = styled.div`
 
 export const DivTitles = styled.div`
   display: flex;
+  align-items: center;
+  gap: 15px;
   background: url(${img});
   color: white;
   padding: 0 50px;
