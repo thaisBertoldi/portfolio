@@ -14,7 +14,7 @@ export const ContainerModal = styled.div`
 
 export const Modal = styled.div`
   width: 70%;
-  height: 400px;
+  height: 500px;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 5px;
@@ -29,7 +29,8 @@ export const Modal = styled.div`
 export const BtnClose = styled.button`
   width: 25px;
   height: 25px;
-  margin-left: 95%;
+  margin-left: 97%;
+  margin-bottom: 60px;
   font-size: 25px;
   background-color: transparent;
   outline: none;
