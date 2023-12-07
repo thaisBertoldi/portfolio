@@ -36,8 +36,12 @@ export const BtnClose = styled.button`
   outline: none;
   border: none;
   cursor: pointer;
-  
+
   @media (max-width: 840px) {
     margin-left: 90%;
   }
+`;
+
+export const Percent = styled.div<{ width: string }>`
+  width: ${(props) => props.width};
 `;

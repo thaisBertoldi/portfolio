@@ -1,6 +1,6 @@
 import { AiFillCloseCircle } from "react-icons/ai";
 import { ModalComponentDTO } from "../../models/ModalComponentDTO";
-import { BtnClose, ContainerModal, Modal } from "./Modal.style";
+import { BtnClose, ContainerModal, Modal, Percent } from "./Modal.style";
 import "./Modal.css";
 
 const ModalInfo = ({ onClick, id }: ModalComponentDTO) => {
@@ -13,45 +13,45 @@ const ModalInfo = ({ onClick, id }: ModalComponentDTO) => {
         <div className="col-six tab-full">
           <ul className="skill-bars">
             <li>
-              <div className="progress">
-                <span>94%</span>
-              </div>
+              <Percent width={"80%"} className="progress">
+                <span>80%</span>
+              </Percent>
               <strong>Java</strong>
             </li>
             <li>
-              <div className="progress">
+              <Percent width={"95%"} className="progress">
                 <span>95%</span>
-              </div>
+              </Percent>
               <strong>Javascript/Typescript</strong>
             </li>
             <li>
-              <div className="progress">
-                <span>93%</span>
-              </div>
+              <Percent width={"95%"} className="progress">
+                <span>95%</span>
+              </Percent>
               <strong>HTML/CSS</strong>
             </li>
             <li>
-              <div className="progress">
-                <span>99%</span>
-              </div>
+              <Percent width={"79%"} className="progress">
+                <span>79%</span>
+              </Percent>
               <strong>Spring</strong>
             </li>
             <li>
-              <div className="progress">
-                <span>88%</span>
-              </div>
+              <Percent width={"59%"} className="progress">
+                <span>59%</span>
+              </Percent>
               <strong>Android</strong>
             </li>
             <li>
-              <div className="progress">
-                <span>86%</span>
-              </div>
+              <Percent width={"95%"} className="progress">
+                <span>95%</span>
+              </Percent>
               <strong>React</strong>
             </li>
             <li>
-              <div className="progress">
-                <span>90%</span>
-              </div>
+              <Percent width={"95%"} className="progress">
+                <span>95%</span>
+              </Percent>
               <strong>Angular</strong>
             </li>
           </ul>
