@@ -25,7 +25,6 @@ li {
 }
 
 .skill-bars li .progress {
-    background: #002b33;
     position: relative;
     height: 100%;
 }

@@ -42,6 +42,7 @@ export const BtnClose = styled.button`
   }
 `;
 
-export const Percent = styled.div<{ width: string }>`
+export const Percent = styled.div<{ width: string, color: string }>`
   width: ${(props) => props.width};
+  background: ${(props) => props.color};
 `;
