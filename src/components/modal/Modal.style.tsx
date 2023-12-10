@@ -42,7 +42,7 @@ export const BtnClose = styled.button`
   }
 `;
 
-export const Percent = styled.div<{ width: string, color: string }>`
+export const Percent = styled.div<{ width: string; color: string }>`
   width: ${(props) => props.width};
   background: ${(props) => props.color};
 `;
@@ -58,5 +58,5 @@ export const UlSkill = styled.ul`
     padding: 0;
     position: relative;
     display: list-item;
-}
+  }
 `;

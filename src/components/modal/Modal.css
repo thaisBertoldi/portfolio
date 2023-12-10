@@ -2,34 +2,12 @@
     column-gap: 10px;
 }
 
-.skill-bars {
-    list-style: none;
-}
-
-.skill-bars li {
-    height: 0.4rem;
-    background: #a1a1a1;
-    width: 100%;
-    margin-bottom: 3rem;
-    padding: 0;
-    position: relative;
-}
-
-li {
-    display: list-item;
-}
-
-/* colocar logica da porcentagem aqui */
-.skill-bars li .percent94 {
-    width: 94%;
-}
-
-.skill-bars li .progress {
+.progress {
     position: relative;
     height: 100%;
 }
 
-.skill-bars li .progress span {
+.progress span {
     position: absolute;
     right: 0;
     top: -3.6rem;
@@ -43,7 +21,7 @@ li {
     border-radius: 3px;
 }
 
-.skill-bars li .progress span::after {
+.progress span::after {
     position: absolute;
     left: 50%;
     bottom: -5px;
