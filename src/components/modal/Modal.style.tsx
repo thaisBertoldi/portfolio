@@ -46,3 +46,17 @@ export const Percent = styled.div<{ width: string, color: string }>`
   width: ${(props) => props.width};
   background: ${(props) => props.color};
 `;
+
+export const UlSkill = styled.ul`
+  list-style: none;
+
+  & li {
+    height: 0.4rem;
+    background: #a1a1a1;
+    width: 100%;
+    margin-bottom: 3rem;
+    padding: 0;
+    position: relative;
+    display: list-item;
+}
+`;
