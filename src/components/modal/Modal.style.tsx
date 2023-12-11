@@ -60,3 +60,7 @@ export const UlSkill = styled.ul`
     display: list-item;
   }
 `;
+
+export const Column = styled.div`
+  column-gap: 10px;
+`;

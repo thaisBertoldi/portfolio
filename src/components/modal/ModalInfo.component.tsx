@@ -1,6 +1,6 @@
 import { AiFillCloseCircle } from "react-icons/ai";
 import { ModalComponentDTO } from "../../models/ModalComponentDTO";
-import { BtnClose, ContainerModal, Modal, Percent, UlSkill } from "./Modal.style";
+import { BtnClose, Column, ContainerModal, Modal, Percent, UlSkill } from "./Modal.style";
 import "./Modal.css";
 
 const ModalInfo = ({ onClick, id }: ModalComponentDTO) => {
@@ -10,7 +10,7 @@ const ModalInfo = ({ onClick, id }: ModalComponentDTO) => {
         <BtnClose onClick={onClick}>
           <AiFillCloseCircle />{" "}
         </BtnClose>
-        <div className="col-six tab-full">
+        <Column>
           <UlSkill className="skill-bars">
             <li>
               <Percent width={"80%"} color={"#E41F24"} className="progress">
@@ -55,7 +55,7 @@ const ModalInfo = ({ onClick, id }: ModalComponentDTO) => {
               <strong>Angular</strong>
             </li>
           </UlSkill>
-        </div>
+        </Column>
       </Modal>
     </ContainerModal>
   );
