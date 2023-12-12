@@ -45,6 +45,37 @@ export const BtnClose = styled.button`
 export const Percent = styled.div<{ width: string; color: string }>`
   width: ${(props) => props.width};
   background: ${(props) => props.color};
+  position: relative;
+  height: 100%;
+
+  & span {
+    position: absolute;
+    right: 0;
+    top: -3.6rem;
+    display: block;
+    font-family: "poppins-regular", sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1;
+    background: #002b33;
+    padding: 0.6rem 0.6rem;
+    border-radius: 3px;
+    
+    &:after {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -5px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #002b33;
+    content: "";
+    font-family: "poppins-regular", sans-serif;
+    color: white;
+    font-size: 1rem;
+    line-height: 1;
+}
+}
 `;
 
 export const UlSkill = styled.ul`
