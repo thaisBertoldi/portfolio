@@ -1,7 +1,6 @@
 import { AiFillCloseCircle } from "react-icons/ai";
 import { ModalComponentDTO } from "../../models/ModalComponentDTO";
-import { BtnClose, Column, ContainerModal, Modal, Percent, UlSkill } from "./Modal.style";
-import "./Modal.css";
+import { BtnClose, Column, ContainerModal, Modal, Percent, Strong, UlSkill } from "./Modal.style";
 
 const ModalInfo = ({ onClick, id }: ModalComponentDTO) => {
   return (
@@ -16,43 +15,43 @@ const ModalInfo = ({ onClick, id }: ModalComponentDTO) => {
               <Percent width={"80%"} color={"#E41F24"}>
                 <span>80%</span>
               </Percent>
-              <strong>Java</strong>
+              <Strong>Java</Strong>
             </li>
             <li>
               <Percent width={"95%"} color={"#EFD81D"}>
                 <span>95%</span>
               </Percent>
-              <strong>Javascript/Typescript</strong>
+              <Strong>Javascript/Typescript</Strong>
             </li>
             <li>
               <Percent width={"95%"} color={"#0073BB"}>
                 <span>95%</span>
               </Percent>
-              <strong>HTML/CSS</strong>
+              <Strong>HTML/CSS</Strong>
             </li>
             <li>
               <Percent width={"79%"} color={"#6CAE3E"}>
                 <span>79%</span>
               </Percent>
-              <strong>Spring</strong>
+              <Strong>Spring</Strong>
             </li>
             <li>
               <Percent width={"59%"} color={"#9FC037"}>
                 <span>59%</span>
               </Percent>
-              <strong>Android</strong>
+              <Strong>Android</Strong>
             </li>
             <li>
               <Percent width={"95%"} color={"#5ED3F3"}>
                 <span>95%</span>
               </Percent>
-              <strong>React</strong>
+              <Strong>React</Strong>
             </li>
             <li>
               <Percent width={"95%"} color={"#BD002E"}>
                 <span>95%</span>
               </Percent>
-              <strong>Angular</strong>
+              <Strong>Angular</Strong>
             </li>
           </UlSkill>
         </Column>

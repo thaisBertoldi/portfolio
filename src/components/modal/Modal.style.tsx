@@ -95,3 +95,13 @@ export const UlSkill = styled.ul`
 export const Column = styled.div`
   column-gap: 10px;
 `;
+
+export const Strong = styled.strong`
+    position: absolute;
+    left: 0;
+    top: -2rem;
+    font-family: "poppins-bold", sans-serif;
+    color: #002b33;
+    text-transform: uppercase;
+    font-size: 1rem;
+`;

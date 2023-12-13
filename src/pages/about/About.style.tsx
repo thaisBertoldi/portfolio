@@ -68,6 +68,7 @@ export const DivTitles = styled.div`
   color: white;
   padding: 0 50px;
   margin: 50px 0;
+  justify-content: space-between;
 `;
 
 export const TitleSection = styled.h2`

@@ -83,7 +83,7 @@ function About() {
       </SecContainer>
       <DivTitles>
         <TitleSection id="skills">Tecnologias</TitleSection>
-        <p onClick={() => setopenModal({ open: true })}>Algo aqui</p>
+        <p onClick={() => setopenModal({ open: true })}>Clique aqui para ver meu progresso nessas tecnologias</p>
       </DivTitles>
       <TercContainer>
         <Skills />
