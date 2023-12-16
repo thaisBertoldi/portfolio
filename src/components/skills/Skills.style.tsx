@@ -22,8 +22,8 @@ export const Card = styled.div`
   align-items: center;
   border-radius: 10%;
   padding: 0 5px;
-  height: 300px;
-	width: 250px;
+  height: 350px;
+	width: 200px;
   justify-content: center;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
