@@ -254,52 +254,32 @@ export const Section = styled.section`
   }
 `;
 
-export const Tooltip = styled.div`
-  font-size: 16px;
-  font-weight: normal;
-  margin-top: 2px;
-  position: relative;
-  &:hover {
-    cursor: help;
-  }
-`;
-
-export const TooltipSpacing = styled.div`
-  height: 20px;
-  margin: 8px;
-  position: relative;
-  width: 20px;
-`;
-
-export const Tooltip1 = styled.div`
-  background-color: #000;
-  border-radius: 10px;
-  content: " ";
-  display: flex;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  width: 20px;
-`;
-
-export const Tooltip2 = styled.div`
-  background-color: #fff;
-  border-radius: 8px;
-  content: " ";
-  display: flex;
-  height: 16px;
-  left: 2px;
-  position: absolute;
-  top: 2px;
-  width: 16px;
-`;
-
 export const TooltipText = styled.div`
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 20px;
-  position: relative;
+  background: rgba(28, 56, 151, 0.9);
+  color: #fff;
+  width: 50px;
+  height: 50px;
   text-align: center;
-  width: 20px;
-  color: black;
+  line-height: 44px;
+  border-radius: 50px;
+  cursor: pointer;
+`;
+export const TooltipBox = styled.div`
+   color: transparent;
+   background-color: transparent;
+   width: 150px;
+   padding: 5px 5px;
+   border-radius: 4px;
+   transition: visibility 0.5s, color 0.5s, background-color 0.5s, width 0.5s, padding 0.5s ease-in-out;
+   visibility: hidden;
+`;
+export const TooltipCard = styled.div`
+   margin-top: 16px;
+   & ${TooltipText}:hover + ${TooltipBox} {
+      visibility: visible;
+      color: #fff;
+      width: 450px;
+      padding: 8px 8px;
+      border-radius: 4px;
+   }
 `;

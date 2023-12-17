@@ -11,16 +11,15 @@ import {
   Section,
   TercContainer,
   TitleSection,
-  Tooltip,
-  Tooltip1,
-  Tooltip2,
-  TooltipSpacing,
+  TooltipBox,
+  TooltipCard,
   TooltipText,
 } from "./About.style";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { ModalDTO } from "../../models/ModalComponentDTO";
 import ModalInfo from "../../components/modal/ModalInfo.component";
+import { GiProgression } from "react-icons/gi";
 
 function About() {
   const [openModal, setopenModal] = useState<ModalDTO>({
@@ -89,18 +88,14 @@ function About() {
       </SecContainer>
       <DivTitles>
         <TitleSection id="skills">Tecnologias</TitleSection>
-        <div>
-          <Tooltip>
-            <TooltipSpacing>
-              <Tooltip1></Tooltip1>
-              <Tooltip2></Tooltip2>
-              <TooltipText>?</TooltipText>
-            </TooltipSpacing>
-          </Tooltip>
-        </div>
-        <p onClick={() => setopenModal({ open: true })}>
-          Clique aqui para ver meu progresso nessas tecnologias
-        </p>
+        <TooltipCard onClick={() => setopenModal({ open: true })}>
+         <TooltipText>
+          <GiProgression />
+         </TooltipText>
+         <TooltipBox>
+            <p> Clique aqui para ver meu progresso nessas tecnologias</p>
+         </TooltipBox>
+      </TooltipCard>
       </DivTitles>
       <TercContainer>
         <Skills />
