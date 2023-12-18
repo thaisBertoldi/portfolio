@@ -267,19 +267,17 @@ export const TooltipText = styled.div`
 export const TooltipBox = styled.div`
    color: transparent;
    background-color: transparent;
-   width: 150px;
-   padding: 5px 5px;
    border-radius: 4px;
    transition: visibility 0.5s, color 0.5s, background-color 0.5s, width 0.5s, padding 0.5s ease-in-out;
    visibility: hidden;
 `;
 export const TooltipCard = styled.div`
-   margin-top: 16px;
+   margin: 16px;
+   display: flex;
    & ${TooltipText}:hover + ${TooltipBox} {
       visibility: visible;
       color: #fff;
       width: 450px;
-      padding: 8px 8px;
       border-radius: 4px;
    }
 `;
