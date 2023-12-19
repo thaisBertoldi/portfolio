@@ -93,7 +93,7 @@ function About() {
           <GiProgression />
          </TooltipText>
          <TooltipBox>
-            <p> Clique aqui para ver meu progresso nessas tecnologias</p>
+            <p>Clique aqui para ver meu progresso nessas tecnologias</p>
          </TooltipBox>
       </TooltipCard>
       </DivTitles>

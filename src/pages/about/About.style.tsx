@@ -265,19 +265,28 @@ export const TooltipText = styled.div`
   cursor: pointer;
 `;
 export const TooltipBox = styled.div`
-   color: transparent;
-   background-color: transparent;
-   border-radius: 4px;
-   transition: visibility 0.5s, color 0.5s, background-color 0.5s, width 0.5s, padding 0.5s ease-in-out;
-   visibility: hidden;
+  color: transparent;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: visibility 0.5s, color 0.5s, background-color 0.5s, width 0.5s,
+    padding 0.5s ease-in-out;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  & p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 `;
 export const TooltipCard = styled.div`
-   margin: 16px;
-   display: flex;
-   & ${TooltipText}:hover + ${TooltipBox} {
-      visibility: visible;
-      color: #fff;
-      width: 450px;
-      border-radius: 4px;
-   }
+  margin: 16px;
+  display: flex;
+  gap: 15px;
+  & ${TooltipText}:hover + ${TooltipBox} {
+    visibility: visible;
+    color: #fff;
+    width: 450px;
+    height: 10px;
+    border-radius: 4px;
+  }
 `;
