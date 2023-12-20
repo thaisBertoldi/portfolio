@@ -73,9 +73,9 @@ function About() {
       </DivTitles>
       <SecContainer id="about">
         <Paragraph color={"white"}>
-          Meu nome é <b>Thais Bertoldi</b>, tenho 28 anos, moro em de Santa
+          Meu nome é <b>Thais Bertoldi</b>, tenho 28 anos, moro em Santa
           Catarina e sou apaixonada por tecnologia. Tenho adquirido conhecimento
-          em várias tecnologias para me profissionalizar na área de
+          em várias ferramentas e linguagens para me profissionalizar na área de
           desenvolvimento fullstack, como, por exemplo, <b>Java</b>,{" "}
           <b>Spring</b>, <b>Microsserviços</b>, <b>Webflux</b>,{" "}
           <b>Javascript</b>, <b>Typescript</b>, <b>React</b>, <b>Angular</b>,{" "}
